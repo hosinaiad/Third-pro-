@@ -1,0 +1,590 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,800;0,900;1,200;1,300;1,600&family=Roboto:wght@400;500&display=swap');
+* {
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+
+/* ..... <div> top.... */
+
+#space-up {
+    width: 100%;
+    height: 33px;
+    background-color: #000016;
+}
+
+
+/* ..... header .... */
+
+header {
+    border-radius: 66px;
+    background-color: #f3efef;
+    width: 50%;
+    position: fixed;
+    /* z-index: 999; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 0px 100px; */
+}
+
+
+/* nav, nav ul, nav li, nav ul a, .... */
+
+nav {
+    width: 60%;
+    /* text-align: center;
+            display: block; */
+    margin-left: 25px;
+}
+
+nav ul {
+    float: left;
+    /* display: block; */
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    /* padding-inline-start: 40px; */
+}
+
+nav li {
+    display: inline-block;
+    line-height: 30px;
+    /* width: 100px; */
+    text-align: center;
+}
+
+nav a {
+    /* color: white; */
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+
+/* .............................................. */
+
+#img-small {
+    width: 77px;
+    border-radius: 50%;
+    padding: 15px;
+}
+
+
+/* ....... Software Engineer: ..... */
+
+.header-dv-p-h5 {
+    text-decoration: none;
+    color: #000016;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.8em;
+    /* We put value em, em >> relative to body default font-size, to translate from "em to px" >> * 16, in browser the font default is 1em = 16px, as example if we specific body font-size: anyNumber px; then it's become default. 
+    Ex: 1.8em *16 = 00.
+    */
+}
+
+
+/* ....Shiyar Jamo.... */
+
+.header-p-i {
+    color: rgb(211, 195, 22);
+    font-size: 22px;
+}
+
+.navigation a {
+    color: #000016;
+    text-decoration: none;
+    font-size: 1.3em;
+    font-weight: 600;
+    padding-left: 55px;
+    transition: 1s;
+}
+
+.navigation a:hover {
+    background-color: rgb(239, 236, 236);
+    border-right: 1px solid#000016;
+    border-bottom: 1px solid#000016;
+    padding: 5px 8px 8px 8px;
+    /* padding-left: 8px; */
+    border-radius: 22px;
+    /* margin-left: 33px; */
+    /* font-size: 1.3em; */
+}
+
+.photo img {
+    width: 222px;
+    height: 222px;
+    border: 22px double rgb(211, 195, 22);
+    border-radius: 50%;
+    /* margin-top: 40px;
+        margin-left: 144px; */
+    /* padding: 55px; */
+}
+
+
+/* ........... Section one ............. */
+
+section {
+    padding: 100px 200px;
+}
+
+.main {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-color: #000016;
+    /* background-size: cover; */
+    /* background-position: center; */
+    background-attachment: fixed;
+    /* To fixed photo and didn't allow to move. */
+}
+
+.main h2 {
+    color: rgb(211, 195, 22);
+    font-size: 1.4em;
+    font-weight: 500;
+}
+
+.main h2 span {
+    color: rgb(211, 195, 22);
+    font-size: 3em;
+    font-weight: 600;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.main h3 {
+    color: rgb(211, 195, 22);
+    font-size: 2em;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.main-btn {
+    color: rgb(211, 195, 22);
+    background-color: #000016;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 600;
+    display: inline-block;
+    /* inline-block important to run padding & margin-bottom below. */
+    padding: 0.9375em 2.187em;
+    /* top  bottom */
+    /* number above em *16 = px. */
+    letter-spacing: 1px;
+    border-radius: 15px;
+    border-right: 1px solid white;
+    border-bottom: 1px solid white;
+    margin-bottom: 40px;
+    transition: 0.7s ease;
+}
+
+.main-btn:hover {
+    color: #fff;
+    background-color: #000018;
+    transform: scale(1.1);
+}
+
+.social-icons a {
+    color: #fafafa;
+    /* background-color: #3a6cf4; */
+    font-size: 2em;
+    padding-right: 7px;
+    /* border-radius: 35px; */
+}
+
+
+/* ......... Section Two: Services ....... */
+
+.title {
+    display: flex;
+    justify-content: center;
+    color: #000016;
+    font-size: 2.2em;
+    font-weight: 800;
+    margin-bottom: 3px;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #fff;
+    width: 17.25em;
+    box-shadow: 0 5px 25px rgba(1 1 1/15%);
+    /* box-shadow: 0 5px 25px rgba(1 1 1/100%); */
+    /* first value: Shadow top & bottom, second value: left >> - negative value & right, blurred value (غير واضح), color value */
+    border-radius: 10px;
+    padding: 25px;
+    margin: 15px;
+    transition: 0.7s ease;
+}
+
+.card:hover {
+    transform: scale(1.1);
+    /* transition: 0.7s ease; */
+}
+
+.icon {
+    color: #000016;
+    font-size: 8em;
+    text-align: center;
+}
+
+.info {
+    text-align: center;
+}
+
+.info h3 {
+    color: #000016;
+    font-size: 1.2em;
+    font-weight: 700;
+    margin: 10px;
+}
+
+
+/* ........ ٍSection Three: Videos ....... */
+
+.projects {
+    background-color: #000016;
+}
+
+.projects .content {
+    margin-top: 30px;
+}
+
+.project-card {
+    background-color: #fff;
+    border: 2px solid white;
+    min-height: 14em;
+    width: 17em;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 20px;
+    transition: 0.7s ease;
+}
+
+.project-card:hover {
+    transform: scale(1.1);
+}
+
+.project-card:hover .project-image {
+    opacity: 0.9;
+}
+
+.project-image img {
+    width: 100%;
+}
+
+.project-info {
+    padding: 1em;
+}
+
+.project-category {
+    font-size: 0.9em;
+    color: #000;
+    /* font-weight: bold; */
+}
+
+.project-title {
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-top: 10px;
+}
+
+.title-0 {
+    color: white;
+    text-align: center;
+    font-size: 36px;
+}
+
+.more-details {
+    text-decoration: none;
+    color: #3a6cf4;
+}
+
+.more-details:hover {
+    color: #601cfc;
+}
+
+
+/* /* ........ ٍSection Four: Contacts ....... */
+
+*/ .icon img {
+    font-size: 3em;
+}
+
+.contact .info h3 {
+    color: black;
+    font-weight: bold;
+}
+
+.contact .info p {
+    font-size: 1.3em;
+}
+
+.card {
+    padding-top: 4px;
+    height: 19em;
+    width: 17em;
+    border: 2px double rgb(211, 195, 22);
+}
+
+
+/* ............... Footer .............. */
+
+footer {
+    background-color: #000016;
+    color: white;
+    padding: 2em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.social-icons-footer a i {
+    color: white;
+    /* background-color: #3a6cf4; */
+    font-size: 1.7em;
+    /* padding: 0 2px 0 0; */
+    border-radius: 22px;
+}
+
+.footer-title {
+    font-size: 1.3em;
+    font-weight: 500;
+}
+
+.footer-title span {
+    color: rgb(211, 195, 22);
+}
+
+#divId-footer {
+    width: 100%;
+    height: 33px;
+    background-color: white;
+}
+
+
+/* .................................... */
+
+
+/* ........ @media .. To get responsive website ........ */
+
+@media (min-width: 1000px) and (max-width: 1200px) {
+    .navigation a {
+        color: #000016;
+        text-decoration: none;
+        font-size: 1.3em;
+        font-weight: 600;
+        padding-left: 55px;
+        transition: 1s;
+    }
+    .navigation a:hover {
+        background-color: rgb(160, 236, 236);
+        border-right: 1px solid white;
+        border-bottom: 1px solid white;
+        padding: 4px 6px 6px 6px;
+        /* padding-left: 8px; */
+        border-radius: 66px;
+        margin-left: 11px;
+        transition: 1s;
+        font-size: 1.3em;
+    }
+    .photo img {
+        width: 222px;
+        height: 222px;
+        border: 22px double rgb(211, 195, 22);
+        border-radius: 50%;
+        /* margin-top: 40px;
+            margin-left: 144px; */
+        /* padding: 55px; */
+    }
+}
+
+@media (min-width: 800px) and (max-width: 1000px) {
+    .navigation a {
+        color: #000016;
+        text-decoration: none;
+        font-size: 1.1em;
+        font-weight: 600;
+        padding-left: 44px;
+        transition: 1s;
+    }
+    .navigation a:hover {
+        background-color: rgb(160, 236, 236);
+        border-right: 1px solid white;
+        border-bottom: 1px solid white;
+        padding: 4px 4px 4px 4px;
+        /* padding-left: 8px; */
+        border-radius: 22px;
+        margin-left: 11px;
+        transition: 1s;
+        font-size: 1.1em;
+    }
+    .photo img {
+        width: 180px;
+        height: 180px;
+        border: 20px double rgb(211, 195, 22);
+        border-radius: 50%;
+        /* margin-top: 40px;
+        margin-left: 144px; */
+        /* padding: 55px; */
+    }
+    section {
+        padding: 90px 180px;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 800px) {
+    .navigation a {
+        color: #000016;
+        text-decoration: none;
+        font-size: 0.9em;
+        font-weight: 600;
+        padding-left: 33px;
+        transition: 1s;
+    }
+    .navigation a:hover {
+        background-color: rgb(119, 208, 208);
+        border-right: 1px solid white;
+        border-bottom: 1px solid white;
+        padding: 4px 4px 4px 4px;
+        /* padding-left: 8px; */
+        border-radius: 22px;
+        margin-left: 8px;
+        transition: 1s;
+        font-size: 0.9em;
+    }
+    .photo img {
+        width: 150px;
+        height: 150px;
+        border: 20px double rgb(211, 195, 22);
+        border-radius: 50%;
+        /* margin-top: 40px;
+        margin-left: 144px; */
+        /* padding: 55px; */
+    }
+    section {
+        padding: 70px 160px;
+    }
+}
+
+@media (min-width: 400px) and (max-width: 600px) {
+    .navigation a {
+        color: #000016;
+        text-decoration: none;
+        font-size: 0.7em;
+        font-weight: 500;
+        padding-left: 22px;
+        transition: 1s;
+    }
+    .navigation a:hover {
+        background-color: rgb(119, 208, 208);
+        border-right: 1px solid white;
+        border-bottom: 1px solid white;
+        padding: 4px 4px 4px 4px;
+        /* padding-left: 8px; */
+        border-radius: 22px;
+        margin-left: 8px;
+        transition: 1s;
+        font-size: 0.7em;
+    }
+    .photo img {
+        width: 130px;
+        height: 130px;
+        border: 17px double rgb(211, 195, 22);
+        border-radius: 50%;
+        /* margin-top: 40px;
+        margin-left: 144px; */
+        /* padding: 55px; */
+    }
+    section {
+        padding: 50px 120px;
+    }
+}
+
+@media (min-width: 300px) and (max-width: 500px) {
+    header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+    }
+    .navigation a {
+        color: #000016;
+        text-decoration: none;
+        font-size: 0.6em;
+        font-weight: 600;
+        padding-left: 11px;
+        transition: 1s;
+        /* float: left; */
+    }
+    .navigation a:hover {
+        background-color: rgb(119, 208, 208);
+        /* border-right: 1px solid white; */
+        /* border-bottom: 1px solid white; */
+        padding: 2px;
+        padding-left: 8px;
+        border-radius: 22px;
+        margin-left: 8px;
+        transition: 1s;
+        font-size: 0.7em;
+        font-weight: 600;
+    }
+    .photo img {
+        width: 120px;
+        height: 120px;
+        border: 10px double rgb(211, 195, 22);
+        border-radius: 50%;
+        margin-top: 30px;
+        margin-left: 44px;
+        /* padding: 55px; */
+    }
+    section {
+        padding: 30px 90px;
+    }
+    /* ......... footer .........*/
+    footer {
+        background-color: #000016;
+        color: white;
+        padding: 1em;
+        display: flex;
+        justify-content: space-between;
+    }
+    .social-icons-footer a i {
+        color: white;
+        /* background-color: #3a6cf4; */
+        font-size: 1.4em;
+        /* padding: 0 2px 0 0; */
+        border-radius: 22px;
+    }
+    .footer-title {
+        font-size: 1.1em;
+        font-weight: 500;
+    }
+    .footer-title span {
+        color: rgb(211, 195, 22);
+    }
+    #divId-footer {
+        width: 100%;
+        height: 25px;
+        background-color: white;
+    }
+}
